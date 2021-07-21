@@ -8,6 +8,6 @@ Test Laravel application for IQnection
 ## Watermark Application
 Requires directories to be made in the public directory
 
--public/uploads
---public/uploads/watermarkedImages
---public/uploads/watermarks
+- public/uploads
+- public/uploads/watermarkedImages
+- public/uploads/watermarks
