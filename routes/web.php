@@ -63,3 +63,11 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->group(function () {
         ->whereNumber('id')
         ->name('admin.users.update');
 });
+
+
+
+
+// Watermark
+Route::get('/watermark', [ImageFileController::class, 'index']);
+
+Route::post('/add-watermark', [ImageFileController::class, 'imageFileUpload'])->name('image.watermark');
