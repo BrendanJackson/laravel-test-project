@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageFileController;
 use App\Http\Controllers\UserActionsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
