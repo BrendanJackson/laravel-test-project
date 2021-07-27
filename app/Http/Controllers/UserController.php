@@ -43,7 +43,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        // echo "<pre>Call store</pre>";
         $action = new CreateNewUser();
+
+        // dd($action);
         if ($user = $action->create($request->post()))
         {
             return redirect()->route('admin.users.list');
